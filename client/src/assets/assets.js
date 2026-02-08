@@ -93,7 +93,7 @@ export const assets = {
     lesson_icon
 }
 
-export const dummyEducatorData = {
+export const dummyLibrarianData = {
     "_id": "675ac1512100b91a6d9b8b24",
     "name": "GreatStack",
     "email": "user.greatstack@gmail.com",
@@ -106,32 +106,32 @@ export const dummyEducatorData = {
 export const dummyTestimonial = [
     {
         name: 'Donald Jackman',
-        role: 'SWE 1 @ Amazon',
+        role: 'Software Engineer @ Amazon',
         image: assets.profile_img_1,
         rating: 5,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+        feedback: 'I\'ve been using this platform for nearly two years to discover amazing books, and it has been incredibly user-friendly, making my reading journey much easier and more enjoyable.',
     },
     {
         name: 'Richard Nelson',
-        role: 'SWE 2 @ Samsung',
+        role: 'Product Manager @ Samsung',
         image: assets.profile_img_2,
         rating: 4,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+        feedback: 'This book platform has transformed how I learn. The collection is vast and well-curated, helping me find exactly what I need for both personal and professional growth.',
     },
     {
         name: 'James Washington',
-        role: 'SWE 2 @ Google',
+        role: 'Data Scientist @ Google',
         image: assets.profile_img_3,
         rating: 4.5,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+        feedback: 'The quality of books available here is outstanding. I love how easy it is to browse and find books that match my interests. Highly recommend to all book lovers!',
     },
 ];
 
 export const dummyDashboardData = {
-    "totalEarnings": 707.38,
+    "totalEarnings": 1245.89,
     "enrolledStudentsData": [
         {
-            "courseTitle": "Introduction to JavaScript",
+            "bookTitle": "JavaScript: The Definitive Guide",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
                 "name": "Great Stack",
@@ -139,7 +139,7 @@ export const dummyDashboardData = {
             }
         },
         {
-            "courseTitle": "Advanced Python Programming",
+            "bookTitle": "Python Programming Mastery",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
                 "name": "Great Stack",
@@ -147,7 +147,7 @@ export const dummyDashboardData = {
             }
         },
         {
-            "courseTitle": "Web Development Bootcamp",
+            "bookTitle": "Full Stack Web Development",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
                 "name": "Great Stack",
@@ -155,7 +155,7 @@ export const dummyDashboardData = {
             }
         },
         {
-            "courseTitle": "Data Science with Python",
+            "bookTitle": "Data Science Fundamentals",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
                 "name": "Great Stack",
@@ -163,7 +163,7 @@ export const dummyDashboardData = {
             }
         },
         {
-            "courseTitle": "Cybersecurity Basics",
+            "bookTitle": "Cybersecurity Essentials",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
                 "name": "Great Stack",
@@ -171,7 +171,7 @@ export const dummyDashboardData = {
             }
         }
     ],
-    "totalCourses": 8
+    "totalBooks": 12
 }
 
 export const dummyStudentEnrolled = [
@@ -181,8 +181,8 @@ export const dummyStudentEnrolled = [
             "name": "GreatStack",
             "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
         },
-        "courseTitle": "Introduction to JavaScript",
-        "purchaseDate": "2024-12-20T08:39:55.509Z"
+        "bookTitle": "JavaScript: The Definitive Guide",
+        "purchaseDate": "2024-11-15T09:22:18.509Z"
     },
     {
         "student": {
@@ -190,8 +190,8 @@ export const dummyStudentEnrolled = [
             "name": "GreatStack",
             "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
         },
-        "courseTitle": "Introduction to JavaScript",
-        "purchaseDate": "2024-12-20T08:59:49.964Z"
+        "bookTitle": "JavaScript: The Definitive Guide",
+        "purchaseDate": "2024-11-18T14:45:33.964Z"
     },
     {
         "student": {
@@ -199,8 +199,8 @@ export const dummyStudentEnrolled = [
             "name": "GreatStack",
             "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
         },
-        "courseTitle": "Advanced Python Programming",
-        "purchaseDate": "2024-12-20T11:03:42.931Z"
+        "bookTitle": "Python Programming Mastery",
+        "purchaseDate": "2024-11-25T10:12:55.931Z"
     },
     {
         "student": {
@@ -208,20 +208,20 @@ export const dummyStudentEnrolled = [
             "name": "GreatStack",
             "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
         },
-        "courseTitle": "Web Development Bootcamp",
-        "purchaseDate": "2024-12-20T11:04:48.798Z"
+        "bookTitle": "Full Stack Web Development",
+        "purchaseDate": "2024-12-02T16:30:21.798Z"
     }
 ]
 
-export const dummyCourses = [
+export const dummyBooks = [
     {
         "_id": "605c72efb3f1c2b1f8e4e1a1",
-        "courseTitle": "Introduction to JavaScript",
-        "courseDescription": "<h2>Learn the Basics of JavaScript</h2><p>JavaScript is a versatile programming language that powers the web. In this course, you will learn the fundamentals of JavaScript, including syntax, data types, and control structures.</p><p>This course is perfect for beginners who want to start their journey in web development. By the end of this course, you will be able to create interactive web pages and understand the core concepts of JavaScript.</p><ul><li>Understand the basics of programming</li><li>Learn how to manipulate the DOM</li><li>Create dynamic web applications</li></ul>",
-        "coursePrice": 49.99,
+        "bookTitle": "JavaScript: The Definitive Guide",
+        "bookDescription": "<h2>Master JavaScript from the Ground Up</h2><p>JavaScript is the language of the web. This comprehensive guide covers everything from basic syntax to advanced programming techniques, making it perfect for both beginners and experienced developers.</p><p>Learn how to build interactive websites, work with modern frameworks, and understand the core concepts that make JavaScript so powerful in today's web development landscape.</p><ul><li>Complete coverage of ES6+ features</li><li>Practical examples and exercises</li><li>Best practices for clean code</li></ul>",
+        "bookPrice": 42.99,
         "isPublished": true,
         "discount": 20,
-        "courseContent": [
+        "bookContent": [
             {
                 "chapterId": "chapter1",
                 "chapterOrder": 1,
@@ -269,13 +269,13 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "675ac1512100b91a6d9b8b24",
+        "librarian": "675ac1512100b91a6d9b8b24",
         "enrolledStudents": [
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [
+        "bookRatings": [
             {
                 "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
                 "rating": 5,
@@ -285,16 +285,16 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T04:47:44.701Z",
         "__v": 4,
-        "courseThumbnail": "https://img.youtube.com/vi/CBWnBi-awSA/maxresdefault.jpg"
+        "bookThumbnail": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800"
     },
     {
         "_id": "675ac1512100b91a6d9b8b24",
-        "courseTitle": "Advanced Python Programming",
-        "courseDescription": "<h2>Deep Dive into Python Programming</h2><p>This course is designed for those who have a basic understanding of Python and want to take their skills to the next level. You will explore advanced topics such as decorators, generators, and context managers.</p><p>By the end of this course, you will be able to write efficient and clean Python code, and understand how to leverage Python's powerful features for real-world applications.</p><ul><li>Master advanced data structures</li><li>Implement object-oriented programming concepts</li><li>Work with libraries and frameworks</li></ul>",
-        "coursePrice": 79.99,
+        "bookTitle": "Python Programming Mastery",
+        "bookDescription": "<h2>Advanced Python Techniques and Best Practices</h2><p>Take your Python skills to the next level with this in-depth guide covering advanced topics like decorators, generators, metaclasses, and asynchronous programming.</p><p>Perfect for developers who want to write more efficient, elegant, and Pythonic code. Includes real-world examples and comprehensive exercises.</p><ul><li>Advanced data structures and algorithms</li><li>Object-oriented design patterns</li><li>Performance optimization techniques</li></ul>",
+        "bookPrice": 54.99,
         "isPublished": true,
         "discount": 15,
-        "courseContent": [
+        "bookContent": [
             {
                 "chapterId": "chapter1",
                 "chapterOrder": 1,
@@ -342,12 +342,12 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "675ac1512100b91a6d9b8b24",
+        "librarian": "675ac1512100b91a6d9b8b24",
         "enrolledStudents": [
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [
+        "bookRatings": [
             {
                 "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
                 "rating": 5,
@@ -357,16 +357,16 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T06:47:54.446Z",
         "__v": 3,
-        "courseThumbnail": "https://img.youtube.com/vi/HdLIMoQkXFA/maxresdefault.jpg"
+        "bookThumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ae",
-        "courseTitle": "Cybersecurity Basics",
-        "courseDescription": "<h2>Protect Systems and Networks</h2><p>Cybersecurity is critical in today's digital age. This course introduces the fundamentals of cybersecurity, including threat analysis, ethical hacking, and secure programming practices.</p><p>By the end of this course, you will understand how to identify vulnerabilities and implement security measures effectively.</p><ul><li>Understand security protocols</li><li>Learn about encryption techniques</li><li>Conduct basic penetration testing</li></ul>",
-        "coursePrice": 69.99,
+        "bookTitle": "Cybersecurity Essentials",
+        "bookDescription": "<h2>Protect Systems and Secure Networks</h2><p>A comprehensive guide to modern cybersecurity practices. Learn how to identify vulnerabilities, implement security protocols, and protect against cyber threats.</p><p>Essential reading for IT professionals, system administrators, and anyone interested in understanding how to secure digital assets in today's connected world.</p><ul><li>Network security fundamentals</li><li>Encryption and cryptography</li><li>Ethical hacking techniques</li></ul>",
+        "bookPrice": 48.99,
         "isPublished": true,
         "discount": 15,
-        "courseContent": [
+        "bookContent": [
             {
                 "chapterId": "chapter1",
                 "chapterOrder": 1,
@@ -414,25 +414,25 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "675ac1512100b91a6d9b8b24",
+        "librarian": "675ac1512100b91a6d9b8b24",
         "enrolledStudents": [
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [],
+        "bookRatings": [],
         "createdAt": "2024-12-27T11:30:00.000Z",
         "updatedAt": "2024-12-31T04:14:49.773Z",
         "__v": 2,
-        "courseThumbnail": "https://img.youtube.com/vi/jZFaMEqEqEQ/maxresdefault.jpg"
+        "bookThumbnail": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1a7",
-        "courseTitle": "Web Development Bootcamp",
-        "courseDescription": "<h2>Become a Full-Stack Web Developer</h2><p>This comprehensive bootcamp covers everything you need to know to become a full-stack web developer. From HTML and CSS to JavaScript and backend technologies, this course is designed to take you from beginner to job-ready.</p><p>Throughout the course, you will work on real-world projects, build a portfolio, and gain the skills necessary to succeed in the tech industry.</p><ul><li>Learn front-end and back-end development</li><li>Build responsive and dynamic web applications</li><li>Understand databases and server-side programming</li></ul>",
-        "coursePrice": 99.99,
+        "bookTitle": "Full Stack Web Development",
+        "bookDescription": "<h2>Build Modern Web Applications from Scratch</h2><p>This comprehensive guide takes you through the entire web development stack - from HTML and CSS to backend technologies and databases.</p><p>Learn to build responsive, scalable web applications using modern frameworks and best practices. Includes hands-on projects and real-world examples.</p><ul><li>Frontend and backend development</li><li>Database design and management</li><li>Deployment and DevOps basics</li></ul>",
+        "bookPrice": 64.99,
         "isPublished": true,
         "discount": 25,
-        "courseContent": [
+        "bookContent": [
             {
                 "chapterId": "chapter1",
                 "chapterOrder": 1,
@@ -480,25 +480,25 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "675ac1512100b91a6d9b8b24",
+        "librarian": "675ac1512100b91a6d9b8b24",
         "enrolledStudents": [
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [],
+        "bookRatings": [],
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2024-12-31T05:31:27.290Z",
         "__v": 2,
-        "courseThumbnail": "https://img.youtube.com/vi/lpx2zFkapIk/maxresdefault.jpg"
+        "bookThumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ac",
-        "courseTitle": "Cloud Computing Essentials",
-        "courseDescription": "<h2>Master Cloud Fundamentals</h2><p>Learn the foundations of cloud computing and explore popular cloud platforms like AWS, Azure, and Google Cloud. This course is ideal for IT professionals and developers looking to transition to cloud-based solutions.</p><p>By the end of this course, you will understand cloud services, deployment models, and best practices for using cloud resources efficiently.</p><ul><li>Understand cloud architecture</li><li>Learn to work with AWS, Azure, and GCP</li><li>Explore serverless computing and storage solutions</li></ul>",
-        "coursePrice": 69.99,
+        "bookTitle": "Cloud Computing Complete Guide",
+        "bookDescription": "<h2>Master Cloud Architecture and Services</h2><p>Comprehensive coverage of cloud computing platforms including AWS, Azure, and Google Cloud. Learn cloud architecture, deployment strategies, and cost optimization.</p><p>Perfect for IT professionals transitioning to cloud technologies or developers looking to build scalable cloud-native applications.</p><ul><li>Cloud platform comparison</li><li>Serverless architecture</li><li>Cloud security and compliance</li></ul>",
+        "bookPrice": 59.99,
         "isPublished": true,
         "discount": 20,
-        "courseContent": [
+        "bookContent": [
             {
                 "chapterId": "chapter1",
                 "chapterOrder": 1,
@@ -546,24 +546,24 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "675ac1512100b91a6d9b8b24",
+        "librarian": "675ac1512100b91a6d9b8b24",
         "enrolledStudents": [
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [],
+        "bookRatings": [],
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2024-12-31T05:32:55.357Z",
         "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/0yboGn8errU/maxresdefault.jpg"
+        "bookThumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ad",
-        "courseTitle": "Data Science with Python",
-        "courseDescription": "<h2>Start Your Data Science Journey</h2><p>Data Science is one of the most in-demand fields in the world. This course teaches you the essentials of data analysis, visualization, and machine learning using Python. Learn libraries like Pandas, NumPy, Matplotlib, and Scikit-learn.</p><p>By the end of this course, you will be equipped to work on real-world data projects and gain insights from data.</p><ul><li>Data cleaning and preprocessing</li><li>Exploratory Data Analysis (EDA)</li><li>Build predictive models</li></ul>",
-        "coursePrice": 89.99,
+        "bookTitle": "Data Science Fundamentals",
+        "bookDescription": "<h2>Your Complete Data Science Journey</h2><p>Learn data analysis, visualization, and machine learning with Python. Master essential libraries like Pandas, NumPy, Matplotlib, and Scikit-learn through practical examples.</p><p>Build a strong foundation in data science methodologies and learn to extract meaningful insights from complex datasets.</p><ul><li>Statistical analysis and modeling</li><li>Machine learning algorithms</li><li>Data visualization techniques</li></ul>",
+        "bookPrice": 68.99,
         "isPublished": true,
         "discount": 20,
-        "courseContent": [
+        "bookContent": [
             {
                 "chapterId": "chapter1",
                 "chapterOrder": 1,
@@ -611,13 +611,13 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "675ac1512100b91a6d9b8b24",
+        "librarian": "675ac1512100b91a6d9b8b24",
         "enrolledStudents": [
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [
+        "bookRatings": [
             {
                 "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
                 "rating": 5,
@@ -627,16 +627,16 @@ export const dummyCourses = [
         "createdAt": "2024-12-27T10:00:00.000Z",
         "updatedAt": "2024-12-31T09:57:48.992Z",
         "__v": 3,
-        "courseThumbnail": "https://img.youtube.com/vi/E4znbZgUWzA/maxresdefault.jpg"
+        "bookThumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1aa",
-        "courseTitle": "Data Science and Machine Learning",
-        "courseDescription": "<h2>Unlock the Power of Data</h2><p>This course provides a comprehensive introduction to data science and machine learning. You will learn how to analyze data, build predictive models, and apply machine learning algorithms to real-world problems.</p><p>By the end of this course, you will have a solid understanding of data manipulation, visualization, and machine learning techniques, enabling you to make data-driven decisions.</p><ul><li>Understand data analysis and visualization</li><li>Learn machine learning algorithms and their applications</li><li>Work with popular data science libraries like Pandas and Scikit-Learn</li></ul>",
-        "coursePrice": 89.99,
+        "bookTitle": "Machine Learning in Practice",
+        "bookDescription": "<h2>Applied Machine Learning Techniques</h2><p>A practical guide to implementing machine learning algorithms and building intelligent systems. Learn supervised and unsupervised learning, neural networks, and deep learning fundamentals.</p><p>Includes real-world case studies and hands-on projects to solidify your understanding of ML concepts and their applications.</p><ul><li>Algorithm selection and optimization</li><li>Model evaluation and validation</li><li>Production ML deployment</li></ul>",
+        "bookPrice": 72.99,
         "isPublished": true,
         "discount": 30,
-        "courseContent": [
+        "bookContent": [
             {
                 "chapterId": "chapter1",
                 "chapterOrder": 1,
@@ -684,24 +684,24 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "675ac1512100b91a6d9b8b24",
+        "librarian": "675ac1512100b91a6d9b8b24",
         "enrolledStudents": [
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [],
+        "bookRatings": [],
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T06:53:59.753Z",
         "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/631lFJdQvoo/maxresdefault.jpg"
+        "bookThumbnail": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ab",
-        "courseTitle": "Introduction to Cybersecurity",
-        "courseDescription": "<h2>Protect the Digital World</h2><p>This course covers the essentials of cybersecurity, including understanding threats, vulnerabilities, and how to secure systems against cyber-attacks. Ideal for beginners, this course will prepare you for a career in cybersecurity.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
-        "coursePrice": 59.99,
+        "bookTitle": "Network Security Handbook",
+        "bookDescription": "<h2>Comprehensive Network Protection Guide</h2><p>Master the fundamentals of network security, from basic principles to advanced threat detection and mitigation strategies. Essential for security professionals and network administrators.</p><p>Learn to design secure networks, implement firewalls, configure VPNs, and respond to security incidents effectively.</p><ul><li>Network architecture security</li><li>Intrusion detection systems</li><li>Security policy development</li></ul>",
+        "bookPrice": 51.99,
         "isPublished": true,
         "discount": 15,
-        "courseContent": [
+        "bookContent": [
             {
                 "chapterId": "chapter1",
                 "chapterOrder": 1,
@@ -749,14 +749,14 @@ export const dummyCourses = [
                 ]
             }
         ],
-        "educator": "675ac1512100b91a6d9b8b24",
+        "librarian": "675ac1512100b91a6d9b8b24",
         "enrolledStudents": [
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [],
+        "bookRatings": [],
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T06:56:13.208Z",
         "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg"
+        "bookThumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800"
     }
 ]

@@ -14,6 +14,8 @@ import AddBook from './pages/librarian/AddBook'
 import MyBooks from './pages/librarian/MyBooks'
 import StudentsEnrolled from './pages/librarian/StudentsEnrolled'
 import Navbar from './components/student/Navbar'
+import Hero from './components/student/Hero'
+import BookSection from './components/student/BookSection'
 
 const App = () => {
 
@@ -22,6 +24,7 @@ const App = () => {
   return (
     <div className='text-default min-h-screen bg-white'>
       {!isLibrarianRoute && <Navbar />}
+      
       
       <Routes>
         <Route path='/' element={<Home />}/>
