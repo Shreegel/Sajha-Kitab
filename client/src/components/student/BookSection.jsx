@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { Button } from 'antd'
+import { Button, Typography } from 'antd'
 import { Link } from 'react-router-dom'
 import BookCard from './BookCard'
 import { dummyBooks } from '../../assets/assets'
+
+const { Title, Paragraph } = Typography
 
 const BookSection = () => {
   const currency = import.meta.env.VITE_CURRENCY
@@ -19,10 +21,20 @@ const BookSection = () => {
 
   return (
     <div className='py-16 md:px-40 px-8'>
-        <h2 className='text-3xl font-medium text-gray-800'>Learn from the best</h2>
-        <p className='text-sm md:text-base text-gray-500 mt-3 '>Discover our top rated books across various categories. From coding and design to business and wellness, our books are put to deliver the results.</p>
+        <Title level={2} className='text-3xl font-medium text-gray-800' style={{ margin: 0 }}>
+          Learn from the best
+        </Title>
+        <Paragraph className='text-sm md:text-base text-gray-500 mt-3' style={{ marginBottom: 0 }}>
+          Discover our top rated books across various categories. From coding and design to business and wellness, our books are put to deliver the results.
+        </Paragraph>
 
-        <div className='grid grid-cols-4 px-4 md:px-0 md:my-16 my-10 gap-4'>
+        <div 
+          className='px-4 md:px-0 md:my-16 my-10 gap-4'
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))'
+          }}
+        >
           {allBooks.slice(0,4).map((book, index) => (
             <BookCard key={index} book={book} currency={currency} />
           ))}
@@ -39,3 +51,4 @@ const BookSection = () => {
 }
 
 export default BookSection
+
