@@ -13,7 +13,11 @@ const TestimonialsSection = () => {
       <Paragraph className='md:text-base text-gray-500 mt-3' style={{ marginBottom: 0 }}>
         Hear from our learners as they share their journeys of transformation, success, and how our <br /> platform has made a difference in their lives.
       </Paragraph>
-      <div>
+      <div className='gap-8 mt-14' s
+          style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))'
+        }}>
         {dummyTestimonial.map((testimonial, index) => (
           <Card 
             key={index} 
@@ -49,6 +53,7 @@ const TestimonialsSection = () => {
                 {testimonial.feedback}
               </Paragraph>
             </div>
+            <a href="#" className='text-blue-500 underline px-5'>Read more</a>
           </Card>
         ))}
       </div>
