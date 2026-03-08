@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { Button, Typography } from 'antd'
 import Loading from '../../components/student/Loading'
 import { assets, dummyBooks, dummyLibrarianData } from '../../assets/assets'
+import Footer from '../../components/student/Footer'
+
+const { Title, Text } = Typography
 
 const BookDetails = () => {
 
   const {id} = useParams()
   const [bookData, setBookData] = useState(null)
   const currency = import.meta.env.VITE_CURRENCY
+  const [isAlreadyEnrolled, setIsAlreadyEnrolled]= useState(false)
 
   //function to calculate average rating of the book
   const calculateRating = (book) => {
@@ -128,9 +133,26 @@ const BookDetails = () => {
               </div>
 
             </div>
+
+            <Button 
+              type="primary" 
+              className='md:mt-6 mt-4 w-full py-3 rounded bg-blue-600 text-white font-medium'
+              style={{ height: 'auto', padding: '12px 0' }}
+            >
+              {isAlreadyEnrolled ? 'Already Enrolled': 'Enroll now'}
+            </Button>
+
+            <div className='pt-6'>
+              <p className='md:text-xl text-lg font-medium text-gray-800'>What's in the book?</p>
+              <ul className='ml-4 pt-2 text-sm md:text-default list-disc text-gray-500 '>
+                <li>Lifetime access with free access.</li>
+                <li>Downloadable resources</li>
+              </ul>
+            </div>
         </div>
       </div>
     </div>
+    <Footer/>
     </>
   ) : <Loading/>
 }
