@@ -6,7 +6,6 @@ import Login from './pages/auth/Login'
 import Register from './pages/auth/Register'
 import BookDetails from './pages/student/BookDetails'
 import MyEnrollments from './pages/student/MyEnrollments'
-import Player from './pages/student/Player'
 import Loading from './components/student/Loading'
 import Librarian from './pages/librarian/Librarian'
 import Dashboard from './pages/librarian/Dashboard'
@@ -32,7 +31,7 @@ const App = () => {
         <Route path='/books-list/:id' element={<BooksList />}/>
         <Route path='/book/:id' element={<BookDetails />}/>
         <Route path='/my-enrollments' element={<MyEnrollments />}/>
-        <Route path='/player/:bookId' element={<Player />}/>
+       
         <Route path='/loading/:path' element={<Loading />}/>
         
         
